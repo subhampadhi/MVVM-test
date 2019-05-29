@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F2A5CAA2293F07E00B71FB9 /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2A5CA92293F07E00B71FB9 /* UserInfoView.swift */; };
+		0F2A5CAC2293F5EC00B71FB9 /* UserInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2A5CAB2293F5EC00B71FB9 /* UserInfoVC.swift */; };
+		0F2A5CAE229402F500B71FB9 /* UserInfoDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2A5CAD229402F500B71FB9 /* UserInfoDataModel.swift */; };
+		0F2A5CB0229405C100B71FB9 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2A5CAF229405C100B71FB9 /* UserViewModel.swift */; };
+		0F7F8263229D52320081D19C /* CellFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7F8262229D52320081D19C /* CellFunctions.swift */; };
+		0F7F8265229D52CE0081D19C /* UserCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7F8264229D52CE0081D19C /* UserCellViewModel.swift */; };
+		0F7F8267229D58940081D19C /* Urls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7F8266229D58940081D19C /* Urls.swift */; };
 		0FD895EF2293DE040089538B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD895EE2293DE040089538B /* AppDelegate.swift */; };
 		0FD895F12293DE040089538B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD895F02293DE040089538B /* ViewController.swift */; };
 		0FD895F42293DE040089538B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FD895F22293DE040089538B /* Main.storyboard */; };
@@ -35,6 +42,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F2A5CA92293F07E00B71FB9 /* UserInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoView.swift; sourceTree = "<group>"; };
+		0F2A5CAB2293F5EC00B71FB9 /* UserInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoVC.swift; sourceTree = "<group>"; };
+		0F2A5CAD229402F500B71FB9 /* UserInfoDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoDataModel.swift; sourceTree = "<group>"; };
+		0F2A5CAF229405C100B71FB9 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		0F7F8262229D52320081D19C /* CellFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellFunctions.swift; sourceTree = "<group>"; };
+		0F7F8264229D52CE0081D19C /* UserCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCellViewModel.swift; sourceTree = "<group>"; };
+		0F7F8266229D58940081D19C /* Urls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Urls.swift; sourceTree = "<group>"; };
 		0FD895EB2293DE040089538B /* MVVM-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FD895EE2293DE040089538B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0FD895F02293DE040089538B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +113,10 @@
 		0FD895ED2293DE040089538B /* MVVM-test */ = {
 			isa = PBXGroup;
 			children = (
+				0FD896222293DE6F0089538B /* ViewModel */,
+				0FD896212293DE600089538B /* viewControllers */,
+				0FD896202293DE500089538B /* Views */,
+				0FD8961F2293DE240089538B /* Model */,
 				0FD895EE2293DE040089538B /* AppDelegate.swift */,
 				0FD895F02293DE040089538B /* ViewController.swift */,
 				0FD895F22293DE040089538B /* Main.storyboard */,
@@ -106,6 +124,8 @@
 				0FD895FA2293DE060089538B /* LaunchScreen.storyboard */,
 				0FD895FD2293DE060089538B /* Info.plist */,
 				0FD895F52293DE040089538B /* MVVM_test.xcdatamodeld */,
+				0F7F8262229D52320081D19C /* CellFunctions.swift */,
+				0F7F8266229D58940081D19C /* Urls.swift */,
 			);
 			path = "MVVM-test";
 			sourceTree = "<group>";
@@ -126,6 +146,39 @@
 				0FD896132293DE060089538B /* Info.plist */,
 			);
 			path = "MVVM-testUITests";
+			sourceTree = "<group>";
+		};
+		0FD8961F2293DE240089538B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0F2A5CAD229402F500B71FB9 /* UserInfoDataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0FD896202293DE500089538B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0F2A5CA92293F07E00B71FB9 /* UserInfoView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0FD896212293DE600089538B /* viewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0F2A5CAB2293F5EC00B71FB9 /* UserInfoVC.swift */,
+			);
+			path = viewControllers;
+			sourceTree = "<group>";
+		};
+		0FD896222293DE6F0089538B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0F2A5CAF229405C100B71FB9 /* UserViewModel.swift */,
+				0F7F8264229D52CE0081D19C /* UserCellViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +315,13 @@
 				0FD895F72293DE040089538B /* MVVM_test.xcdatamodeld in Sources */,
 				0FD895F12293DE040089538B /* ViewController.swift in Sources */,
 				0FD895EF2293DE040089538B /* AppDelegate.swift in Sources */,
+				0F2A5CAA2293F07E00B71FB9 /* UserInfoView.swift in Sources */,
+				0F2A5CAE229402F500B71FB9 /* UserInfoDataModel.swift in Sources */,
+				0F7F8265229D52CE0081D19C /* UserCellViewModel.swift in Sources */,
+				0F2A5CB0229405C100B71FB9 /* UserViewModel.swift in Sources */,
+				0F2A5CAC2293F5EC00B71FB9 /* UserInfoVC.swift in Sources */,
+				0F7F8263229D52320081D19C /* CellFunctions.swift in Sources */,
+				0F7F8267229D58940081D19C /* Urls.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +499,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GFXBHE9YLC;
 				INFOPLIST_FILE = "MVVM-test/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -457,6 +518,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GFXBHE9YLC;
 				INFOPLIST_FILE = "MVVM-test/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
