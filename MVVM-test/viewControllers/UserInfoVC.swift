@@ -27,11 +27,18 @@ class UserInfoVC: UserInfoView {
                 self.userTable.reloadData()
             }
         }
+        viewModel.moveToNextScreenCompletion = { result in
+            let data = result
+            let fullInfoVC = FullInfoVC()
+            fullInfoVC.data = data
+            self.navigationController?.pushViewController(fullInfoVC, animated: true)
+            
+            
+        }
     }
 }
 
 extension UserInfoVC: UITableViewDelegate {
-    
 }
 
 extension UserInfoVC:UITableViewDataSource {
@@ -46,13 +53,15 @@ extension UserInfoVC:UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-       
+        
         let cellViewModel = self.viewModel.tableCells[indexPath.row]
         return cellViewModel.cellInstantiate(tableView: tableView,indexPath: indexPath)
-       
+        
     }
     
-    
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cellViewModel = self.viewModel.tableCells[indexPath.row]
+        cellViewModel.didSelect(tableView: tableView, indexPath: indexPath)
+    }
 }
 

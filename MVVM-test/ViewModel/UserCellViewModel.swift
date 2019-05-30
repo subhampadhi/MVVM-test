@@ -15,11 +15,13 @@ class UserCellViewModel {
     let name: String
     let Age: String
     let profileImage: String
+    var cellSelectedCompletion: ((Int) -> ())?
     
     init(name: String , Age: String ,profileImage:String) {
         self.name = name
         self.Age = Age
         self.profileImage = profileImage
+        
     }
 }
 
@@ -37,6 +39,10 @@ extension UserCellViewModel: CellFunctions {
         cell.profileAge.text = Age
         cell.profileImage.image = UIImage(url: URL(string: profileImage))
         return cell
+    }
+    
+    func didSelect(tableView: UITableView, indexPath: IndexPath) {
+        self.cellSelectedCompletion?(indexPath.row)
     }
 }
 

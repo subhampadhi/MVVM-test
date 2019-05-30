@@ -12,6 +12,7 @@ class UserViewModel {
     
     var reloadData: (() -> ())?
     var results = [Result]()
+    var moveToNextScreenCompletion: ((Result) -> ())?
     
     let tableCellTypes: [CellFunctions.Type] = [UserCellViewModel.self]
     
@@ -21,7 +22,7 @@ class UserViewModel {
         self.assignTableViewCells()
     }
     
-    func assignTableViewCells(){
+    func assignTableViewCells() {
         self.tableCells = self.setupTableViewCells()
     }
 }
@@ -32,7 +33,13 @@ extension UserViewModel {
         
         var cellViewModels = [CellFunctions]()
         for result in results {
-            cellViewModels.append(UserCellViewModel(name: result.name?.first ?? "", Age: "\(result.dob?.age ?? 0)", profileImage:result.picture?.medium ?? ""))
+            let userCell = UserCellViewModel(name: result.name?.first ?? "", Age: "\(result.dob?.age ?? 0)", profileImage:result.picture?.medium ?? "")
+            userCell.cellSelectedCompletion = { index in
+                let data = self.results[index]
+                self.moveToNextScreenCompletion?(data)
+                
+            }
+            cellViewModels.append(userCell)
         }
         return cellViewModels
     }

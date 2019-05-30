@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F0D9935229FB0CE00BBE3C0 /* FullInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0D9934229FB0CE00BBE3C0 /* FullInfoView.swift */; };
+		0F0D9937229FB14B00BBE3C0 /* FullInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0D9936229FB14B00BBE3C0 /* FullInfoVC.swift */; };
 		0F2A5CAA2293F07E00B71FB9 /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2A5CA92293F07E00B71FB9 /* UserInfoView.swift */; };
 		0F2A5CAC2293F5EC00B71FB9 /* UserInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2A5CAB2293F5EC00B71FB9 /* UserInfoVC.swift */; };
 		0F2A5CAE229402F500B71FB9 /* UserInfoDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2A5CAD229402F500B71FB9 /* UserInfoDataModel.swift */; };
@@ -42,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F0D9934229FB0CE00BBE3C0 /* FullInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullInfoView.swift; sourceTree = "<group>"; };
+		0F0D9936229FB14B00BBE3C0 /* FullInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullInfoVC.swift; sourceTree = "<group>"; };
 		0F2A5CA92293F07E00B71FB9 /* UserInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoView.swift; sourceTree = "<group>"; };
 		0F2A5CAB2293F5EC00B71FB9 /* UserInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoVC.swift; sourceTree = "<group>"; };
 		0F2A5CAD229402F500B71FB9 /* UserInfoDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoDataModel.swift; sourceTree = "<group>"; };
@@ -160,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				0F2A5CA92293F07E00B71FB9 /* UserInfoView.swift */,
+				0F0D9934229FB0CE00BBE3C0 /* FullInfoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -168,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				0F2A5CAB2293F5EC00B71FB9 /* UserInfoVC.swift */,
+				0F0D9936229FB14B00BBE3C0 /* FullInfoVC.swift */,
 			);
 			path = viewControllers;
 			sourceTree = "<group>";
@@ -319,7 +325,9 @@
 				0F2A5CAE229402F500B71FB9 /* UserInfoDataModel.swift in Sources */,
 				0F7F8265229D52CE0081D19C /* UserCellViewModel.swift in Sources */,
 				0F2A5CB0229405C100B71FB9 /* UserViewModel.swift in Sources */,
+				0F0D9937229FB14B00BBE3C0 /* FullInfoVC.swift in Sources */,
 				0F2A5CAC2293F5EC00B71FB9 /* UserInfoVC.swift in Sources */,
+				0F0D9935229FB0CE00BBE3C0 /* FullInfoView.swift in Sources */,
 				0F7F8263229D52320081D19C /* CellFunctions.swift in Sources */,
 				0F7F8267229D58940081D19C /* Urls.swift in Sources */,
 			);
