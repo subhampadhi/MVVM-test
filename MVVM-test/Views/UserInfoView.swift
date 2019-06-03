@@ -24,6 +24,8 @@ class UserInfoView: UIViewController {
         userTable.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
         userTable.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
         userTable.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
+        userTable.estimatedRowHeight = 180
+        userTable.rowHeight = UITableView.automaticDimension
     }
 }
 
@@ -69,17 +71,18 @@ class UsersCell: UITableViewCell {
         addSubview(profileNameLabel)
         addSubview(profileAge)
         
-        profileImage.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 15).isActive = true
-        profileImage.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
+        profileImage.leadingAnchor.constraint(equalTo: layoutMarginsGuide.leadingAnchor, constant: 15).isActive = true
+        profileImage.topAnchor.constraint(equalTo: layoutMarginsGuide.topAnchor, constant: 10).isActive = true
         profileImage.heightAnchor.constraint(equalToConstant: 80).isActive = true
         profileImage.widthAnchor.constraint(equalToConstant: 80).isActive = true
         profileImage.layer.cornerRadius = 40
         
         profileNameLabel.leadingAnchor.constraint(equalTo: profileImage.trailingAnchor, constant: 25).isActive = true
-        profileNameLabel.topAnchor.constraint(equalTo: profileImage.topAnchor , constant: 10).isActive = true
-        profileNameLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10).isActive = true
+        profileNameLabel.topAnchor.constraint(equalTo: layoutMarginsGuide.topAnchor , constant: 10).isActive = true
+        profileNameLabel.trailingAnchor.constraint(equalTo: layoutMarginsGuide.trailingAnchor, constant: -10).isActive = true
         profileAge.topAnchor.constraint(equalTo: profileNameLabel.bottomAnchor , constant: 10).isActive = true
         profileAge.leadingAnchor.constraint(equalTo: profileImage.trailingAnchor, constant: 25).isActive = true
+        profileAge.bottomAnchor.constraint(equalTo: layoutMarginsGuide.bottomAnchor, constant: 0).isActive = true
         
     }
     

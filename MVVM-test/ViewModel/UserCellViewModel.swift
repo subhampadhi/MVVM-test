@@ -21,7 +21,6 @@ class UserCellViewModel {
         self.name = name
         self.Age = Age
         self.profileImage = profileImage
-        
     }
 }
 

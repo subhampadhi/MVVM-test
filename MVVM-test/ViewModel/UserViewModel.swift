@@ -37,7 +37,6 @@ extension UserViewModel {
             userCell.cellSelectedCompletion = { index in
                 let data = self.results[index]
                 self.moveToNextScreenCompletion?(data)
-                
             }
             cellViewModels.append(userCell)
         }
